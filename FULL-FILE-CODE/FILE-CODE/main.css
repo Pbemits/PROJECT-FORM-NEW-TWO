@@ -1,4 +1,3 @@
-/* Thiết lập các thuộc tính chung cho body */
 body {
     margin: 0;
     padding: 0;
@@ -10,113 +9,56 @@ body {
     justify-content: center;
     height: 100vh;
     text-align: center;
-}
-
-/* Thiết lập kích thước và bố cục cho phần tử form */
-.form-background {
+    }
+    .form-background {
     width: 25rem;
     height: 30rem;
     background-color: #2cb5a0;
     border-radius: 16px;
     border: 8px solid #7cdacc;
-}
-
-/* Thiết lập kích thước và bố cục cho hình ảnh avatar */
-#imageavatar {
+    }
+    #imageavatar {
     width: 10rem;
     height: 10rem;
     margin-top: 2rem;
     filter: brightness(0) invert(1);
     -webkit-filter: brightness(0) invert(1);
-}
-
-/* Thiết lập kiểu chữ cho các phần tử trên trang web */
-p {
+    }
+    #imageavatar:hover {
+    border: 4px solid black;
+    border-radius: 80px;
+    box-shadow: 0px 0px 10px rgba(44, 181, 160, 0.8);
+    }
+    p {
     font-size: 2rem;
     color: #fff;
-}
-
-strong {
-    font-size: 2.3rem;    
+    }
+    strong {
+    font-size: 2.3rem;
     font-weight: 700;
-}
-
-/* Thiết lập kích thước và màu sắc cho content-line */
-.content-line {
+    }
+    .content-line {
     width: 80%;
     height: 3px;
     background-color: rgba(207, 212, 222, 1);
     border-radius: 20px;
     position: relative;
     left: 40px;
-}
-
-/* Thiết lập kích thước và màu sắc cho biểu tượng liên kết */
-a svg {
+    }
+    a svg {
     width: 45px;
     height: 45px;
     display: inline-block;
-    margin: 0px 20px;   
+    margin: 0px 20px;
     background-color: #2cb5a0;
     margin-top: 3rem;
-}
-
-/* Thiết lập màu sắc cho icon */
-.my-icon path {
+    }
+    .my-icon path {
     fill: #fff;
-}
-
-/* Thiết lập hiệu ứng khi click vào icon */
-.my-icon:active {
+    }
+    .my-icon:active {
     box-shadow: 0px 0px 10px rgba(38, 114, 189, 0.8);
-}
-
-/* Thiết lập hiệu ứng hover cho phần tử form */
-.form-background:hover {
+    }
+    .form-background:hover {
     box-shadow: 0px 0px 10px rgba(61, 113, 166, 0.8);
-}
-
-/* Media query cho màn hình có độ rộng lớn hơn hoặc bằng 768px */
-@media screen and (min-width: 768px) {
-    /* Thiết lập bố cục flexbox cho body */
-    body {
-        flex-direction: column;
     }
-
-    /* Thiết lập kích thước và bố cục cho phần tử form */
-    .form-background {
-        width: 50%;
-        height: 50%;
-        margin: auto;
-    }
-
-    /* Thiết lập kích thước và bố cục cho hình ảnh avatar */
-    #imageavatar {
-        width: 15rem;
-        height: 15rem;
-    }
-
-    /* Thiết lập kiểu chữ cho các phần tử trên trang web */
-    p {
-        font-size: 2.5rem;
-    }
-
-    strong {
-        font-size: 3rem;
-    }
-
-    /* Thiết lập kích thước và màu sắc cho content-line */
-    .content-line {
-        width: 50%;
-        height: 5px;
-        left: 25%;
-    }
-
-    /* Thiết lập kích thước và màu sắc cho biểu tượng liên kết */
-    a svg {
-        width: 75px;
-        height: 75px;
-        margin: 0px 50px;
-        margin-top: 5rem;
-    }
-}
